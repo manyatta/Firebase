@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service Cafe</title>
+    <link rel="stylesheet" href="style.css" >
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+</head>
+<body>
+    <h1>Service Cafe</h1>
+    <div class="content">
+        <form id="add-cafe-form">
+            <input type="text" name="name" placeholder="Cafe Name">
+            <input type="text" name="city" placeholder="City Name">
+            <button>Add Cafe</button>
+        </form>
+        <ul id="cafe-list">
+        </ul>
+    </div>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBgqpZZmAUpNheLEm7XbPWhqAv4aGYaoBg",
+    authDomain: "service-cafe.firebaseapp.com",
+    databaseURL: "https://service-cafe.firebaseio.com",
+    projectId: "service-cafe",
+    storageBucket: "service-cafe.appspot.com",
+    messagingSenderId: "376091585504",
+    appId: "1:376091585504:web:3c47d699618c3c1c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db  = firebase.firestore();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
